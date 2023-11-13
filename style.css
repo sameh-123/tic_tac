@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kalam:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.tic_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.welcome{
+    font-size: 60px;
+}
+.cont1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.players{
+    display: flex;
+    font-size: 50px;
+    gap: 200px;
+}
+.p1,.p2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.human,.robot{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.btn{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+    transition-property: transform, box-shadow;
+    transition-duration: .5s;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.go{
+    font-size: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+    transition-property: transform, box-shadow;
+    transition-duration: .5s;
+    box-shadow: 10px 10px rgb(189, 178, 178);
+}
+.go:active{
+    transform: scale(.6);
+}
+.cont2{
+    display: flex;
+    gap: 250px;
+}
+.grid{
+    display: grid;
+    grid-template: 150px 150px 150px/ 150px 150px 150px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btns1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.item{
+    border-top: none;
+    border-left: none;
+    background-color: white;
+    font-size: 90px;
+    font-family: 'Kalam', cursive;
+}
+.b3,.b6,.b9{
+    border-right: none;
+}
+.b7,.b8,.b9{
+    border-bottom: none;
+}
+.pl1,.pl2{
+    background-image: url('./images/human1.gif');
+    background-position: center;
+    background-size: cover;
+}
+.cl1,.cl2{
+    background-image: url('./images/robot1.gif');
+    background-position: center;
+    background-size: cover;
+}
+.sc{
+    transform: scale(0.7);
+}
+.warn{
+    color: red;
+    font-size: 30px;
+}
+.item{
+    transition-property: transform, box-shadow;
+    transition-duration: .5s;
+}
+.item:active{
+    transform: scale(0.7);
+}
+.msg{
+    color: lightgreen;
+    font-size: 30px;
+}
